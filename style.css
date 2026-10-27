@@ -290,3 +290,21 @@ footer {
     padding: 5px 10px;
     font-size: 12px;
 }
+
+.boton-cv {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #2563eb;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.boton-cv:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
