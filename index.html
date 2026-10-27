@@ -1,170 +1,194 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Francisco Díaz | Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="#inicio" class="logo">FD.</a>
-
-        <ul>
-          <li><a href="#sobre-mi">Sobre mí</a></li>
-          <li><a href="#tecnologias">Tecnologías</a></li>
-          <li><a href="#proyectos">Proyectos</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <section id="inicio" class="presentacion">
-        <p class="etiqueta">ESTUDIANTE DE PROGRAMACIÓN</p>
-
-        <h1>Hola, soy Francisco Díaz</h1>
-
-        <h2>Desarrollador web en formación</h2>
-
-        <p>
-          Me interesa crear páginas web útiles, modernas y adaptables a
-          distintos dispositivos. Actualmente estoy aprendiendo y desarrollando
-          proyectos para negocios reales.
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Francisco Exequiel Díaz | Desarrollador Web Junior</title>
+  <meta name="description" content="Portfolio de Francisco Exequiel Díaz: desarrollador web junior, soporte IT y estudiante de Programación en la UTN." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Iconos reutilizables -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 2a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zM22 6l-10 7L2 6"/></symbol>
+    <symbol id="i-cv" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zM14 2v6h6M8 13h8M8 17h8"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.7-5.2A8.5 8.5 0 1 1 21 11.5z"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M5 3l14 9-14 9z"/></symbol>
+  </svg>
+ 
+  <header class="topbar">
+    <nav class="nav">
+      <a href="#inicio" class="brand">Francisco E. Díaz</a>
+      <button class="menu-btn" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <ul class="menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto" class="nav-cta">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+ 
+  <main>
+    <!-- INICIO / SOBRE MÍ -->
+    <section id="inicio" class="hero">
+      <div class="hero-text">
+        <p class="chip">Disponible para prácticas y primer empleo IT</p>
+        <h1>Francisco Exequiel Díaz</h1>
+        <p class="role">Desarrollador Web Junior · Soporte IT · Estudiante de Programación UTN</p>
+        <p class="lead">
+          Creo sitios web claros, rápidos y que se ven bien en el celular. Estudio Programación en la UTN,
+          hago la formación Full Stack en RollingCode School y aprendo construyendo proyectos para negocios reales.
         </p>
-
-        
-
-
-<a class="boton-cv"
-   href="./archivos/CV.FranciscoDiaz.pdf"
-   target="_blank"
-   rel="noopener noreferrer">
-    Ver mi CV en PDF ↗
-</a>
-
-
-
-
-
-        <a href="#proyectos" class="boton">Ver mis proyectos</a>
-
-
-      </section>
-
-      <section id="sobre-mi">
-        <h2>Sobre mí</h2>
-
-        <p>
-          Estudio Programación en la UTN y realizo una formación Full Stack en
-          RollingCode School. Me gusta aprender desarrollando proyectos y
-          buscando soluciones a necesidades concretas.
-        </p>
-      </section>
-
-      <section id="tecnologias">
-        <h2>Tecnologías y herramientas</h2>
-
-        <div class="lista-tecnologias">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>Bootstrap</span>
-          <span>JavaScript básico</span>
-          <span>Git</span>
-          <span>GitHub</span>
-          <span>Visual Studio Code</span>
+        <div class="socials">
+          <a class="btn btn-primary" href="./archivos/CV.FranciscoDiaz.pdf" target="_blank" rel="noopener noreferrer"><svg><use href="#i-cv"/></svg>Ver mi CV</a>
+          <a class="btn btn-ghost" href="https://github.com/FranDiaz26" target="_blank" rel="noopener noreferrer"><svg><use href="#i-github"/></svg>GitHub</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/TU-USUARIO" target="_blank" rel="noopener noreferrer"><svg><use href="#i-linkedin"/></svg>LinkedIn</a>
+          <a class="btn btn-ghost" href="mailto:franciscoexequieldiaz482@gmail.com"><svg><use href="#i-mail"/></svg>Correo</a>
         </div>
-      </section>
-
-      <section id="proyectos">
-        <h2>Mis proyectos</h2>
-
-        
-
-
-<article class="tarjeta-proyecto">
-    <p class="numero-proyecto">PROYECTO 01</p>
-
-    <h3>Mundi — Carta digital para cafetería</h3>
-
-    <p>
-        Desarrollo de una carta digital para una cafetería,
-        que permite a los clientes explorar productos y
-        categorías desde sus dispositivos móviles. El proyecto
-        busca mejorar la experiencia de consulta del menú
-        mediante una interfaz visual y fácil de navegar.
-    </p>
-
-    <div class="etiquetas-proyecto">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>Diseño responsive</span>
-    </div>
-
-    <a href="https://mundyscarta.netlify.app"
-       target="_blank"
-       rel="noopener noreferrer">
-        Ver demo ↗
-    </a>
-</article>
-
-
-
-
-      
-
-<article class="tarjeta-proyecto">
-    <p class="numero-proyecto">PROYECTO 02</p>
-
-    <h3>MostachoGym — Sitio web para gimnasio</h3>
-
-    <p>
-        Prototipo web diseñado para centralizar información
-        sobre planes, horarios y novedades del gimnasio.
-        La propuesta busca facilitar el acceso a información
-        importante para los socios y las personas interesadas,
-        desde un único sitio y de forma sencilla.
-    </p>
-
-    <div class="etiquetas-proyecto">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>Diseño responsive</span>
-    </div>
-
-    <p class="estado">
-        Estado: prototipo en desarrollo.
-    </p>
-</article>
-
-
-      </section>
-
-      <section id="contacto">
-        <h2>Contacto</h2>
-
-        <p>¿Querés conocer más sobre mis proyectos?</p>
-
-        <a href="mailto:franciscoexequieldiaz482@gmail.com">
-          Enviame un correo
-        </a>
-
-        <p>
-          También podés encontrarme en GitHub:
-          <a
-            href="https://github.com/FranDiaz26"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Mi perfil de GitHub
-          </a>
-        </p>
-      </section>
-    </main>
-
-    <footer>
-      <p>© 2026 Francisco Díaz. Portfolio personal.</p>
-    </footer>
-  </body>
+      </div>
+      <aside class="hero-card glass" aria-label="Resumen">
+        <div class="code-dots"><i></i><i></i><i></i></div>
+        <pre><code><span class="k">const</span> francisco = {
+  <span class="p">rol</span>: <span class="s">"Dev Web Junior"</span>,
+  <span class="p">estudia</span>: [<span class="s">"UTN"</span>, <span class="s">"RollingCode"</span>],
+  <span class="p">stack</span>: [<span class="s">"HTML"</span>, <span class="s">"CSS"</span>, <span class="s">"JS"</span>],
+  <span class="p">ubicacion</span>: <span class="s">"Tucumán, AR"</span>
+};</code></pre>
+      </aside>
+    </section>
+ 
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="section">
+      <h2>Habilidades técnicas y herramientas</h2>
+      <div class="grid-3">
+        <article class="card glass">
+          <h3>Frontend</h3>
+          <ul class="bars">
+            <li><span>HTML5</span><b style="--w:90%"></b></li>
+            <li><span>CSS3 y diseño responsive</span><b style="--w:85%"></b></li>
+            <li><span>Bootstrap</span><b style="--w:75%"></b></li>
+            <li><span>JavaScript</span><b style="--w:50%"></b></li>
+          </ul>
+        </article>
+        <article class="card glass">
+          <h3>Herramientas IT</h3>
+          <div class="badges">
+            <span class="badge b-navy">Git</span><span class="badge b-navy">GitHub</span>
+            <span class="badge b-navy">VS Code</span><span class="badge b-teal">Netlify</span>
+            <span class="badge b-teal">GitHub Pages</span><span class="badge b-teal">Soporte IT</span>
+          </div>
+        </article>
+        <article class="card glass">
+          <h3>Soft skills</h3>
+          <ul class="ticks">
+            <li>Aprendizaje autónomo</li>
+            <li>Resolución de problemas</li>
+            <li>Comunicación con clientes</li>
+            <li>Trabajo en equipo</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+ 
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="section">
+      <h2>Portfolio de proyectos</h2>
+ 
+      <div class="grid-3">
+        <article class="project glass">
+          <div class="mock"><div class="mock-bar"><i></i><i></i><i></i></div>
+            <div class="mock-screen"><img src="mundys.jpg.jpeg" alt="Captura de Mundys, carta digital" loading="lazy" /><span>Captura de Mundys</span></div></div>
+          <div class="project-body">
+            <span class="status ok">Publicado en producción</span>
+            <h3>Mundys - Carta Digital Gastronómica</h3>
+            <p>Carta digital para una cafetería, pensada para consultar el menú desde el celular.</p>
+            <ul class="ticks">
+              <li>Navegación simple por categorías y productos</li>
+              <li>Diseño responsive, optimizado para móvil</li>
+              <li>Publicada y accesible online</li>
+            </ul>
+            <div class="badges"><span class="badge b-orange">HTML5</span><span class="badge b-blue">CSS3</span><span class="badge b-teal">Responsive</span></div>
+            <div class="actions">
+              <a class="btn btn-primary" href="https://mundyscarta.netlify.app" target="_blank" rel="noopener noreferrer"><svg><use href="#i-play"/></svg>Ver Demo En Vivo</a>
+              <!-- Reemplazá por el link exacto del repositorio -->
+              <a class="btn btn-ghost" href="https://github.com/FranDiaz26" target="_blank" rel="noopener noreferrer"><svg><use href="#i-github"/></svg>Ver Código en GitHub</a>
+            </div>
+          </div>
+        </article>
+ 
+        <article class="project glass">
+          <div class="mock"><div class="mock-bar"><i></i><i></i><i></i></div>
+            <div class="mock-screen"><img src="mostacho.jpg.jpeg" alt="Captura de la web de Gimnasio Mostacho" loading="lazy" /><span>Captura de Gimnasio Mostacho</span></div></div>
+          <div class="project-body">
+            <span class="status wip">Prototipo en desarrollo</span>
+            <h3>Gimnasio Mostacho - Plataforma Web</h3>
+            <p>Sitio para centralizar la información de un gimnasio: gestión de planes y novedades.</p>
+            <ul class="ticks">
+              <li>Planes, horarios y novedades en un solo lugar</li>
+              <li>Carruseles para profes e instalaciones</li>
+              <li>Experiencia clara en móvil y escritorio</li>
+            </ul>
+            <div class="badges"><span class="badge b-orange">HTML5</span><span class="badge b-blue">CSS3</span><span class="badge b-yellow">JavaScript</span><span class="badge b-navy">Git</span></div>
+            <div class="actions">
+              <a class="btn btn-primary" href="https://mostachogym.netlify.app" target="_blank" rel="noopener noreferrer"><svg><use href="#i-play"/></svg>Ver Demo En Vivo</a>
+              <a class="btn btn-ghost" href="https://github.com/FranDiaz26" target="_blank" rel="noopener noreferrer"><svg><use href="#i-github"/></svg>Ver Código en GitHub</a>
+            </div>
+          </div>
+        </article>
+ 
+        <article class="project glass">
+          <div class="mock"><div class="mock-bar"><i></i><i></i><i></i></div>
+            <div class="mock-screen"><img src="flochet.jpg.jpeg" alt="Captura de Flochett, catálogo de amigurumis" loading="lazy" /><span>Captura de Flochett</span></div></div>
+          <div class="project-body">
+            <span class="status ok">Publicado en producción</span>
+            <h3>Flochett - Catálogo Digital de Amigurumis</h3>
+            <p>Catálogo web para un emprendimiento artesanal de amigurumis de Lules, Tucumán.</p>
+            <ul class="ticks">
+              <li>Catálogo con filtros por disponibilidad</li>
+              <li>Zoom de fotos y pedidos directos por WhatsApp e Instagram</li>
+              <li>Diseño responsive, optimizado para móvil</li>
+            </ul>
+            <div class="badges"><span class="badge b-orange">HTML5</span><span class="badge b-blue">CSS3</span><span class="badge b-yellow">JavaScript</span><span class="badge b-navy">Git</span></div>
+            <div class="actions">
+              <a class="btn btn-primary" href="https://flochettnew.netlify.app/" target="_blank" rel="noopener noreferrer"><svg><use href="#i-play"/></svg>Ver Demo En Vivo</a>
+              <a class="btn btn-ghost" href="https://github.com/FranDiaz26" target="_blank" rel="noopener noreferrer"><svg><use href="#i-github"/></svg>Ver Código en GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+ 
+    <!-- CONTACTO -->
+    <section id="contacto" class="section">
+      <h2>Contacto</h2>
+      <div class="contact glass">
+        <div>
+          <p class="lead">¿Buscás a alguien para sumar a tu equipo o querés una web para tu negocio? Escribime.</p>
+          <div class="links">
+            <!-- Reemplazá 549381XXXXXXX por tu número con código de país y área -->
+            <a class="btn btn-wa" href="https://wa.me/549381XXXXXXX" target="_blank" rel="noopener noreferrer"><svg><use href="#i-wa"/></svg>WhatsApp</a>
+            <a class="btn btn-ghost" href="mailto:franciscoexequieldiaz482@gmail.com"><svg><use href="#i-mail"/></svg>Email</a>
+            <a class="btn btn-ghost" href="https://github.com/FranDiaz26" target="_blank" rel="noopener noreferrer"><svg><use href="#i-github"/></svg>GitHub</a>
+          </div>
+        </div>
+        <form id="form" novalidate>
+          <label>Nombre<input name="nombre" required autocomplete="name" /></label>
+          <label>Email<input name="email" type="email" required autocomplete="email" /></label>
+          <label>Mensaje<textarea name="mensaje" rows="4" required></textarea></label>
+          <button class="btn btn-primary" type="submit">Enviar mensaje</button>
+          <p class="form-msg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+ 
+  <footer class="footer"><p>© 2026 Francisco Exequiel Díaz. Portfolio personal.</p></footer>
+  <script src="script.js"></script>
+</body>
 </html>
+ 
