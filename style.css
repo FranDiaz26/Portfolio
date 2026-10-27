@@ -1,0 +1,292 @@
+
+/* ========================================
+   1. CONFIGURACIÓN GENERAL
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0b1120;
+    color: #e5e7eb;
+    line-height: 1.7;
+}
+
+/* ========================================
+   2. CABECERA Y MENÚ
+======================================== */
+
+header {
+    background-color: #111827;
+    border-bottom: 1px solid #263244;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.logo {
+    color: #60a5fa;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+nav ul a {
+    color: #d1d5db;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+nav ul a:hover {
+    color: #60a5fa;
+}
+
+/* ========================================
+   3. PRESENTACIÓN PRINCIPAL
+======================================== */
+
+.presentacion {
+    max-width: 900px;
+    min-height: 75vh;
+    margin: 0 auto;
+    padding: 120px 24px 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.etiqueta {
+    color: #60a5fa;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+.presentacion h1 {
+    font-size: clamp(36px, 6vw, 64px);
+    line-height: 1.15;
+    margin-bottom: 16px;
+}
+
+.presentacion h2 {
+    color: #93c5fd;
+    font-size: clamp(21px, 3vw, 30px);
+    font-weight: normal;
+    margin-bottom: 24px;
+}
+
+.presentacion > p:not(.etiqueta) {
+    max-width: 650px;
+    color: #9ca3af;
+    margin-bottom: 30px;
+}
+
+/* ========================================
+   4. BOTONES
+======================================== */
+
+.boton {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #3b82f6;
+    transform: translateY(-3px);
+}
+
+/* ========================================
+   5. SECCIONES GENERALES
+======================================== */
+
+section:not(.presentacion) {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 80px 24px;
+    scroll-margin-top: 80px;
+}
+
+section:not(.presentacion) h2 {
+    font-size: 32px;
+    margin-bottom: 24px;
+}
+
+#sobre-mi p,
+#contacto p {
+    color: #9ca3af;
+    max-width: 750px;
+    margin-bottom: 16px;
+}
+
+/* ========================================
+   6. TECNOLOGÍAS
+======================================== */
+
+.lista-tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.lista-tecnologias span {
+    background-color: #172033;
+    color: #bfdbfe;
+    border: 1px solid #2b3b55;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* ========================================
+   7. TARJETAS DE PROYECTOS
+======================================== */
+
+.tarjeta-proyecto {
+    background-color: #111827;
+    border: 1px solid #263244;
+    padding: 28px;
+    border-radius: 14px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.tarjeta-proyecto:hover {
+    border-color: #60a5fa;
+    transform: translateY(-4px);
+}
+
+.tarjeta-proyecto h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.tarjeta-proyecto p {
+    color: #9ca3af;
+    margin-bottom: 16px;
+}
+
+.tarjeta-proyecto a,
+#contacto a {
+    color: #60a5fa;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.tarjeta-proyecto a:hover,
+#contacto a:hover {
+    text-decoration: underline;
+}
+
+.estado {
+    font-size: 13px;
+    font-style: italic;
+}
+
+/* ========================================
+   8. PIE DE PÁGINA
+======================================== */
+
+footer {
+    border-top: 1px solid #263244;
+    text-align: center;
+    padding: 24px;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+/* ========================================
+   9. ADAPTACIÓN A CELULARES
+======================================== */
+
+@media (max-width: 650px) {
+    nav {
+        flex-direction: column;
+        padding: 16px;
+        gap: 12px;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 12px 18px;
+    }
+
+    .presentacion {
+        min-height: auto;
+        padding: 90px 24px;
+    }
+
+    section:not(.presentacion) {
+        padding: 55px 24px;
+    }
+
+    section:not(.presentacion) h2 {
+        font-size: 27px;
+    }
+
+    .tarjeta-proyecto {
+        padding: 22px;
+    }
+}
+
+
+/* Información adicional de los proyectos */
+
+.numero-proyecto {
+    color: #60a5fa;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.etiquetas-proyecto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 20px 0;
+}
+
+.etiquetas-proyecto span {
+    background-color: #172033;
+    color: #bfdbfe;
+    border: 1px solid #2b3b55;
+    border-radius: 6px;
+    padding: 5px 10px;
+    font-size: 12px;
+}
