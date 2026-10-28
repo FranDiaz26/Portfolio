@@ -167,3 +167,14 @@ input, textarea { width: 100%; }
   .btn { padding: .7rem .8rem; font-size: .9rem; }
 }
  
+/* Proyectos en 2 columnas (4 tarjetas = 2x2) */
+.projects-grid { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 760px) { .projects-grid { grid-template-columns: 1fr; } }
+ 
+
+
+
+
+
+
+
